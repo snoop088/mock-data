@@ -3,8 +3,8 @@
     "_id": "string",
     "title": "string",
     "genre": "Genre",
-    "numberInStock": "number",
-    "dailyRentalRate": "number",
+    "numberInStock": "int",
+    "dailyRentalRate": "int",
     "publishDate": "date"
   },
   "Genre": {
