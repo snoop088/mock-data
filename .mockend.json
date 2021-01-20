@@ -1,13 +1,12 @@
 {
-  "Post": {
+  "Movie": {
     "title": "string",
-    "views": "int",
-    "published": "boolean",
-    "createdAt": "date",
-    "comments": "Comment[]"
+    "genre": "Genre",
+    "numberInStock": "int",
+    "dailyRentalRate": "int",
+    "publishDate": "date"
   },
-  "Comment": {
-    "body": "string",
-    "post": "Post"
+  "Genre": {
+    "name": "string"
   }
 }
