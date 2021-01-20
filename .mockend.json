@@ -1,14 +1,13 @@
 {
-  "Movie": {
-    "_id": "string",
+  "Post": {
     "title": "string",
-    "genre": "Genre",
-    "numberInStock": "int",
-    "dailyRentalRate": "int",
-    "publishDate": "date"
+    "views": "int",
+    "published": "boolean",
+    "createdAt": "date",
+    "comments": "Comment[]"
   },
-  "Genre": {
-    "_id": "string",
-    "name": "string",
+  "Comment": {
+    "body": "string",
+    "post": "Post"
   }
 }
