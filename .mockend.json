@@ -1,0 +1,14 @@
+{
+  Movie: {
+    _id: string,
+    title: string,
+    genre: Genre,
+    numberInStock: number,
+    dailyRentalRate: number,
+    publishDate: date
+  },
+  Genre: {
+    _id: string,
+    name: string,
+  }
+}
