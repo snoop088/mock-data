@@ -7,6 +7,7 @@
     "publishDate": "date"
   },
   "Genre": {
-    "name": "string"
+    "name": "string",
+    "movies": "Movie[]"
   }
 }
