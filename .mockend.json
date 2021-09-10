@@ -10,7 +10,7 @@
     }}
   },
   "Genre": {
-    "name": {"string": {}},
+    "name": {"string": ["Action", "Horror", "Drama", "Comedy"]},
     "movies": {"hasMany": "Movie"}
   }
 }
