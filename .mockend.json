@@ -1,13 +1,16 @@
 {
   "Movie": {
-    "title": "string",
-    "genre": "Genre",
-    "numberInStock": "int",
-    "dailyRentalRate": "int",
-    "publishDate": "date"
+    "title": {"string": {}},
+    "genre": {"belongsTo": "Genre"},
+    "numberInStock": {"int": {"min": 0, "max": 100}},
+    "dailyRentalRate": {"int": {"min": 1, "max": 10}},
+    "publishDate": {"dateTime": {
+      "min": "2010-01-01T00:00:00Z",
+      "max": "2020-12-31T23:59:59Z"
+    }}
   },
   "Genre": {
-    "name": "string",
-    "movies": "Movie[]"
+    "name": {"string": {}},
+    "movies": {"hasMany": "Movie"}
   }
 }
